@@ -1,0 +1,32 @@
+{% extends "base/base_sitio.html" %}
+{% load staticfiles %}
+
+{% block featured_image %}
+<img src="{% static 'img/centros_head.jpg' %}">
+{% endblock %}
+
+
+{% block contenido %}
+
+<div class="row">
+	<div class="col-md-offset-1 col-md-10 informacion">
+        <div>
+            <h3>CENTROS DE ACOPIO</h3>
+            <p>
+                En la ciudad de Querétaro diariamente se generan 800 toneladas diarias de Residuos Sólidos Urbanos (RSU). Este municipio cuenta con un relleno sanitario en Mompaní, en él se recicla el 6.25% de los residuos separando los que tienen un valor en el mercado del reciclaje. Cuando la cantidad reciclada se vende, el 50% de la ganancia es para el Municipio de Querétaro y el 50% para Proactiva. (Fuente: Ketzalcoatl, Periodismo Ambiental y Social).
+            </p>
+        </div>
+        <div>
+            <h3>Nuestra Propuesta:</h3>
+            <ul>
+                <li>Cultura de la separación de residuos en casa, desde el origen y que quien lo hace es quien sea el beneficiado: Escuelas, Comunidades o Instituciones</li>
+                <li>El separar nuestros Residuos Sólidos Urbanos en el origen permite minimizar el volumen que llega al relleno sanitario, teniendo la oportunidad de aprovechar materiales que pueden ser procesados, disminuir el uso de materia prima y tener ahorro de energia, de agua y reducción de la contaminación.</li>
+                <li>Se recomienda llevar los residuos separados a un Centro o Punto de Acopio</li>
+                <li>Un Centro o Punto de Acopio es un lugar el cual recibe material separado que puede recuperarse, para ser enviado a centros de reciclado que tienen la capacidad de transformar en nuevos productos nuestro materiales, Conoce el código de colores de cada material</li>
+                <li>Los Centros o Puntos de Acopio reciben diferente tipo de material</li>
+            </ul>
+            <h4>Conoce, Infórmate, Participa!</h4>
+        </div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base/base_sitio.html" %}
+{% load staticfiles %}
+
+{% block featured_image %}
+<img src="{% static 'img/galeria/1.jpeg' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="row">
+    <div class="col-md-6 destacado">
+        <h4>UNETE A NUESTRO EQUIPO</h4>
+        <img class ="img-responsive" src="{% static 'img/inicio_1.jpg' %}">
+        <p>
+            Tú también puedes ser parte de QPET Educación Ambiental A.C. como voluntario, promotor ambiental o a través de Servicio Social, ¡pide informes!
+        </p>
+    </div>
+    <div class="col-md-6 destacado">
+        <h4>CONOCE NUESTROS PROYECTOS!</h4>
+        <img class ="img-responsive" src="{% static 'img/inicio_2.jpg' %}">
+        <p>
+            Los Residuos Sólidos Urbanos son causantes del 20% del cambio climático, por lo tanto nuestros proyectos están enfocados a su separación y al intercambio de información para que los ciudadanos tengan un mejor manejo y disposición de los mismos
+        </p>    
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 destacado">
+        <h4>Q PET EDUCACIÓN AMBIENTAL AC, EXPANSIÓN XALAPA : PROYECTO TETRA-HOUSE</h4>
+        <img class ="img-responsive" src="{% static 'img/inicio_3.jpg' %}">
+        <p>
+            Tetra-House es un proyecto ideado para generar conciencia ambiental en las personas en cuanto al uso excesivo de empaques Tetra-Pack, los cuales son muy contaminantes. Se trata de utilizar este tipo de residuos para tapizar casas en zonas de bajos recurso con climas fríos y montañosos; las propiedades aislantes del Tetra-Pack impiden que el frío y el agua de lluvia entren a las casas
+        </p>
+    </div>
+    <div class="col-md-6 destacado">
+        <h4>Q PET EDUCACIÓN AMBIENTAL AC, EXPANSIÓN GUADALAJARA : PROYECTO RECYCSINC</h4>
+        <img class ="img-responsive" src="{% static 'img/inicio_4.jpg' %}">
+        <p>
+            Recycsinc es un mapa interactivo que incluye los lugares a los que los estudiantes pueden llevar sus residuos, ya sea que reciban un único tipo de residuos, como vidrio o aluminio, o que sea un centro de acopio, donde se reciben de todos tipos.
+        </p>    
+        <p>
+            El mapa se encontrará disponible en un sitio web y a través de él se explicará de manera adecuada, sencilla y gráfica los pasos a seguir en el proceso de reciclaje, además, se pretende que esté al alcance de todo público
+        </p>
+    </div>
+</div>
+{% endblock %}

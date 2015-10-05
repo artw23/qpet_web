@@ -1,0 +1,24 @@
+{% extends "base/base_sitio.html" %}
+{% load staticfiles %}
+
+{% block featured_image %}
+<img src="{% static 'img/objetivos_head.jpg' %}">
+{% endblock %}
+
+
+{% block contenido %}
+<div>
+    <h3>OBJETIVOS</h3>
+    <ul>
+        <li>
+            <span class="black">Sumar esfuerzos existentes:</span> actualmente contamos con un amplio equipo de trabajo que, ya sea a través del voluntariado o del servicio social, contribuye en las diferentes áreas de trabajo de la organización. El trabajo en equipo es indispensable para que todos los proyectos resulten exitosos.
+        </li>
+        <li>
+            <span class="black">Integración de varios sectores:</span> el manejo adecuado de RSU no depende únicamente de los ambientalistas y las empresas recicladoras, para que la problemática derivada los residuos pueda llegar a una solución, es necesario que tanto gobierno, como ciudadanos y empresas se incorporen a la causa.
+        </li>
+        <li>
+            Crear sinergia en cada una de nuestras acciones para que estas puedan tener una mayor proyección que beneficie a un mayor número de personas y se traduzcan en hechos tangibles para los miembros de cada comunidad y los habitantes del estado.
+        </li>
+    </ul>
+</div>
+{% endblock %}

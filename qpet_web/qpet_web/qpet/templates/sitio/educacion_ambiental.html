@@ -1,0 +1,38 @@
+{% extends "base/base_sitio.html" %}
+{% load staticfiles %}
+
+{% block featured_image %}
+<img src="{% static 'img/edu_ambiental_head.jpg' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<div class="row">
+	<div class="col-md-12">
+		<h3>EDUCACIÓN AMBIENTAL</h3>
+		<h4>Meta de la Educación Ambiental</h4>
+		<p>
+			Formar una población mundial consciente y preocupada con el medio ambiente y con los problemas asociados, y que tenga conocimiento, aptitud, actitud, motivación y compromiso para trabajar individual y colectivamente en la búsqueda de soluciones para los problemas existentes y para prevenir nuevos. (Carta de Belgrado)
+		</p>
+        <p>
+            Tú puedes participar de este proyecto si te gusta convivir con niños y sabes la importancia que tiene una buena educación, te invitamos a que nos escribas para conocer tu perfil y te puedas unir a nuestras filas de voluntarios.
+        </p>
+	</div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static 'img/educacion_ambiental-1.jpg' %}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'img/educacion_ambiental-2.jpg' %}" class="img-responsive">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static 'img/educacion_ambiental-3.jpg' %}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'img/educacion_ambiental-4.jpg' %}" class="img-responsive">
+    </div>
+</div>
+{% endblock %}

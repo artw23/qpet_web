@@ -1,0 +1,131 @@
+{% load staticfiles %}
+<html>
+	<head>
+
+		<!-- - - - - - - - -  CSS - - - - - - - - - -->
+
+	    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+	</head>
+
+	<body>
+
+		<!-- - - - - - - - -  MENU - - - - - - - - - -->
+
+		<nav id = "menu" class="navbar navbar-inverse">
+	     	<div class="container">
+	        	<div class="navbar-header">
+	          		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            		<span class="sr-only">Toggle navigation</span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	          		</button>
+	          		<a class="navbar-brand" href="{% url 'home' %}">Inicio</a>
+	        	</div>
+	        <div id="navbar" class="collapse navbar-collapse">
+	         	<ul class="nav navbar-nav">
+	            	<li class="dropdown">
+                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                			¿Quienes Somos? <span class="caret"></span>
+                		</a>
+                		<ul class="dropdown-menu">
+                            <li><a href="{% url 'somos' %}">¿Quienes Somos?</a></li>
+                  			<li><a href="{% url 'objetivos' %}">Objetivos</a></li>
+                  			<li><a href="{% url 'alianzas' %}">Alianzas Enlaces</a></li>
+                		</ul>	
+              		</li>
+              		<li><a href="{% url 'proyectos' %}">Proyectos</a></li>
+	            	<li class="dropdown">
+                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                			Fondeos <span class="caret"></span>
+                		</a>
+                		<ul class="dropdown-menu">
+                            <li><a href="{% url 'fondeos' %}">Fondeos</a></li>
+                  			<li><a href="{% url 'centros' %}">Centros de Acopio</a></li>
+                		</ul>	
+              		</li>
+	            	<li class="dropdown">
+                		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                			Q'petizate <span class="caret"></span>
+                		</a>
+                		<ul class="dropdown-menu">
+                            <li><a href="{% url 'qpetizate' %}">Q'petizate</a></li>
+                  			<li><a href="{% url 'educacion_ambiental' %}">Educación Ambiental</a></li>
+                  			<li><a href="{% url 'inspectores_ambientales' %}">Inspectores Ambientales</a></li>
+                  			<li><a href="{% url 'servicio_social' %}">Servicio Social</a></li>
+                  			<li><a href="{% url 'unete' %}">Unete Al Equipo</a></li>
+                  			<li><a href="{% url 'visitas_comunidades' %}">Visitas a Comunidades</a></li>
+                		</ul>	
+              		</li>
+	            	<li><a href="{% url 'contacto' %}">Contacto</a></li>
+	            	<li><a href="#">Premios</a></li>
+                  	<li><a href="#">Inicia Sesión</a></li>
+	          	</ul>
+
+	        </div>
+	      </div>
+	    </nav>
+
+	   	<!-- - - - - - - - -  FIN DEL MENU - - - - - - - - - -->
+
+	   	<!-- - - - - - - - -  INFORMACION AMBIENTAL - - - - - - - - - -->
+	   	<div class="container">
+	   		<div class="row">
+		   		<div class="col-md-offset-1 col-md-3">
+		   			<img class="" src="{% static 'img/logo_qpet.png' %}">
+		   		</div>
+		   		<div class="col-md-offset-1 col-md-6">
+		   			<h3>Lo que hemos ahorrado</h3>
+		   			<div class="row">
+		   				<div class=" col-xs-4">
+		   					<img src="{% static 'img/arbol.png' %}">
+		   					<span>100 000 litros</span>
+		   				</div>
+		   				<div class=" col-xs-4">
+		   					<img src="{% static 'img/watts.png' %}">
+		   					<span>100 000 litros</span>
+		   				</div>
+		   				<div class=" col-xs-4">
+		   					<img src="{% static 'img/gota.png' %}">
+		   					<span>100 000 litros</span>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</div>
+		   	<div id="contenido">
+                <div class="row">
+	               <div class="col-md-offset-1 col-md-10 featured_image">
+                        {% block featured_image %}
+		   		         {% endblock %}        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10">
+                        <div class="row informacion">
+                            <div class="col-md-9">
+                                {% block contenido %}
+                                 {% endblock %}
+                            </div>
+                            <div class="col-md-3">
+                                <a class="twitter-timeline" height="400px" href="//twitter.com/search?q=%40twitterdev" data-widget-id="486744238403489792">
+             Tweets about "</a><br><br>
+                                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		   	</div>
+	   	</div>
+
+
+
+	</body>
+
+	<!-- - - - - - - - -  JS - - - - - - - - - -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/site.js' %}"></script>
+</html>

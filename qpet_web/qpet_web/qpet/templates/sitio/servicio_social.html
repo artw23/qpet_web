@@ -1,0 +1,51 @@
+{% extends "base/base_sitio.html" %}
+{% load staticfiles %}
+
+{% block featured_image %}
+<img src="{% static 'img/servicio_head.jpg' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="row">
+	<div class="col-md-12">
+		<h3>SERVICIO SOCIAL</h3>
+		<h4>Socios Formadores del ITESM</h4>
+		<p>
+			Realiza tu Servicio Social Comunitario  con nosotros, tenemos muchas áreas en las que nos puedes apoyar de acuerdo con tu especialización profesional.
+		</p>
+        <ol>
+            <li>
+                Composta y Hortalizas  (Ing. Alimentos, Agronomía, Biotecnología)
+            </li>
+            <li>
+                Separación de residuos (Ing. Industrial, Diseño Gráfico, Mercadotecnia, Mecánica, Mecatronica, Programadores, etc)
+            </li>
+            <li>
+                Difusión y redes sociales (Comunicación, mercadotecnia o cualquier carrera)
+            </li>
+            <li>
+                Sitio web (Comunicación, Mercadotecnia, Programadores -sistemas- diseño grafico)
+            </li>
+            <li>
+                Ecotecnias (Arquitectos)
+            </li>
+        </ol>
+	</div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static 'img/servicio_social-1.jpg' %}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'img/servicio_social-2.jpg' %}" class="img-responsive">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static 'img/servicio_social-3.jpg' %}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'img/servicio_social-4.jpg' %}" class="img-responsive">
+    </div>
+</div>
+{% endblock %}
