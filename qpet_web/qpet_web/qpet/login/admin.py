@@ -1,11 +1,17 @@
 from django.contrib import admin
 
-from .models import Usuario
+from .models import User
+from .models import UserInfo
 # Register your models here.
 
-class UsuarioAdmin(admin.ModelAdmin):
-    list_display = ["__unicode__","correo","telefono"]
+class UserAdmin(admin.ModelAdmin):
+    list_display = ["__unicode__","phone_number","email"]
     class Meta:
-        model = Usuario
+        model = User
+admin.site.register(User, UserAdmin)
 
-admin.site.register(Usuario, UsuarioAdmin)
+class UserInfoAdmin(admin.ModelAdmin):
+    list_display = ["__unicode__","first_name","last_name","points"]
+    class Meta:
+        model = UserInfo
+admin.site.register(UserInfo, UserInfoAdmin)

@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'qpet_database',
         #'ENGINE': 'django.db.backends.mysql',
-        #'NAME': 'qpet_database', 
+        #'NAME': 'qpet_db', 
         #'USER': 'root',
         #'PASSWORD': '',
         #'HOST': '', # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.

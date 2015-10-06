@@ -1,0 +1,98 @@
+{% extends "base/base_sitio.html" %}
+{% load staticfiles %}
+
+{% block css %}
+<style>
+#map {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+</style>
+{% endblock %}
+
+{% block js %}
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+      center: new google.maps.LatLng(44.5403, -78.5463),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions)
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+{% endblock %}
+
+{% block contenido %}
+
+
+<div class="row">
+    <h3>Puedes conseguir los siguientes premios</h3>
+    <div class="col-md-6 premio">
+        <h4>Premio 1</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-responsive" src="https://pmcdeadline2.files.wordpress.com/2014/02/movie-ticket__140215055130.jpg">
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li>
+                        <span>Precio : </span>50pts
+                    </li>
+                    <li>
+                       <span> Descripcion : </span>Podras conseguir un boleto de cine para ver tu pelicula favorita
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <button class="btn btn-default" type="submit">Ver Premio</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 premio">
+        <h4>Premio 2</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-responsive" src="https://pmcdeadline2.files.wordpress.com/2014/02/movie-ticket__140215055130.jpg">
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li>
+                        <span>Precio : </span>50pts
+                    </li>
+                    <li>
+                       <span> Descripcion : </span>Podras conseguir un boleto de cine para ver tu pelicula favorita
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <button class="btn btn-default" type="submit">Ver Premio</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-offset-4 col-lg-4">
+        <p>
+            <a>Inicia serion</a> para ganar premios
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Localiza nuestros centros de reciclaje</h3>
+        <div id="map"></div>
+    </div>
+</div>
+
+{% endblock %}

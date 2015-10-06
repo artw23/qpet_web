@@ -39,7 +39,17 @@ urlpatterns = [
     url(r'^qpetizate/visitas_a_comunidades$', 'pages.views.visitas_comunidades', name="visitas_comunidades"),
 
 
+    url(r'^premios$', 'premios.views.index', name="premios"),
+    
+    url(r'^premios/listar-premios$', 'premios.views.listaPremios', name="listar-premios"),
+    
+    url(r'^premios/ver-premio$', 'premios.views.premio', name="ver-premio"),
+    
+    
+    
     url(r'^contacto$', 'contacto.views.contacto', name="contacto"),
+    
+    url(r'^iniciar-sesion$', 'login.views.login', name="iniciarSesion"),
 
     url(r'^admin/', include(admin.site.urls)),
 ] 
