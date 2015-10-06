@@ -1,0 +1,54 @@
+<nav id = "menu" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">Inicio</a>
+        </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    ¿Quienes Somos? <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'somos' %}">¿Quienes Somos?</a></li>
+                    <li><a href="{% url 'objetivos' %}">Objetivos</a></li>
+                    <li><a href="{% url 'alianzas' %}">Alianzas Enlaces</a></li>
+                </ul>	
+            </li>
+            <li><a href="{% url 'proyectos' %}">Proyectos</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Fondeos <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'fondeos' %}">Fondeos</a></li>
+                    <li><a href="{% url 'centros' %}">Centros de Acopio</a></li>
+                </ul>	
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Q'petizate <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'qpetizate' %}">Q'petizate</a></li>
+                    <li><a href="{% url 'educacion_ambiental' %}">Educación Ambiental</a></li>
+                    <li><a href="{% url 'inspectores_ambientales' %}">Inspectores Ambientales</a></li>
+                    <li><a href="{% url 'servicio_social' %}">Servicio Social</a></li>
+                    <li><a href="{% url 'unete' %}">Unete Al Equipo</a></li>
+                    <li><a href="{% url 'visitas_comunidades' %}">Visitas a Comunidades</a></li>
+                </ul>	
+            </li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            <li><a href="{% url 'premios' %}">Premios</a></li>
+            <li><a href="{% url 'iniciarSesion' %}">Inicia Sesión</a></li>
+        </ul>
+
+    </div>
+  </div>
+</nav>
